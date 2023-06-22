@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Server setup
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const app = express();
 
 // Static middleware
